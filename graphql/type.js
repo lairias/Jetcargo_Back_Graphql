@@ -22,5 +22,23 @@ const UserType = new GraphQLObjectType({
     DAT_UPD: { type: GraphQLString },
   },
 });
+const CityType = new GraphQLObjectType({
+  name: "CityType",
+  fields: {
+    COD_CITY: { type: GraphQLID },
+    COD_STATE: { type: GraphQLID },
+    NAM_CITY: { type: GraphQLString },
+    ZIP_CODE: { type: GraphQLString },
+    POS_CODE: { type: GraphQLString },
+    POPULATION: { type: GraphQLString },
+    CURRENCY: { type: GraphQLString },
+    TIMEZONE: { type: GraphQLString },
+    DES_CITY: { type: GraphQLString },
+    USR_ADD: { type: GraphQLString },
+    USR_UPD: { type: GraphQLString },
+    DAT_ADD: { type: GraphQLString },
+    DAT_UPD: { type: GraphQLString },
+  },
+});
 
-module.exports = {UserType}
+module.exports = { UserType, CityType };
